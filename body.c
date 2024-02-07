@@ -54,7 +54,7 @@ void draw_body(int n)
     int index_haut = 6 * n - 1;
 
     for (temp = 0; temp < n; temp++) {
-	draw_body1(index_bas);
+        draw_body1(index_bas);
         draw_body1_n(index_haut, index_bas);
         index_bas++;
         index_haut--;
@@ -64,7 +64,7 @@ void draw_body(int n)
     for ( temp = n; temp > 1; temp--) {
         draw_body2(index_bas);
         draw_body2_n(index_haut, index_bas);
-	index_bas--;
+        index_bas--;
         index_haut++;
     }
 }

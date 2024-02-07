@@ -34,9 +34,9 @@ void draw_foot(int n)
 
     for (temp = 0; temp < n - 1 ; temp++) {
         draw_last(index_bas);
-	draw_last_n(index_haut, index_bas);
-	index_bas++;
-	index_haut--;
+        draw_last_n(index_haut, index_bas);
+        index_bas++;
+        index_haut--;
     }
     first_star(n);
 }

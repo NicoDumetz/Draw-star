@@ -47,7 +47,7 @@ void draw_head(int n)
     int temp;
 
     for (temp = 0; temp < n - 1; temp++) {
-	draw_star(index_bas);
+        draw_star(index_bas);
         draw_star_with_n(index_haut, index_bas);
         index_bas--;
         index_haut++;
