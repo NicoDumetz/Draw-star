@@ -5,6 +5,7 @@
 ** body of my star
 */
 
+
 int draw_body1(int index_bas)
 {
     int temp;
