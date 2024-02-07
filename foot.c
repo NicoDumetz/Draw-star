@@ -15,6 +15,7 @@ int draw_last(int index_bas)
     my_putchar('*');
 }
 
+
 int draw_last_n(int index_haut, int index_bas)
 {
     int ind;
