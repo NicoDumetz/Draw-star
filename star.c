@@ -10,7 +10,7 @@ int draw_line_left(int index_bas)
 {
     int temp;
 
-    for (temp = 0; temp < index_bas + 1; temp++) {
+    for (temp = 0; temp < index_bas; temp++) {
         my_putchar('*');
     }
 }
@@ -20,23 +20,9 @@ int draw_line_right(int index_haut, int index_bas)
     int temp;
 
     for (temp = 0; temp < index_haut - index_bas - 3; temp++) {
-	 my_putchar(' ');
+        my_putchar(' ');
     }
     draw_line_left(index_bas);
-    my_putchar('\n');
-}
-
-void draw_one(void)
-{
-    int i;
-
-    for ( i = 0; i < 7; i++) {
-        if ( i == 3 ) {
-            my_putchar(' ');
-        } else {
-            my_putchar('*');
-        }
-    }
     my_putchar('\n');
 }
 
@@ -46,11 +32,7 @@ int star(unsigned int size)
 
     n = size;
     if ( n == 1 ) {
-        first_star(1);
         draw_one();
-        draw_body(n);
-        draw_one();
-        draw_foot(n);
         return 0;
     }
     draw_head(n);

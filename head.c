@@ -9,7 +9,7 @@ int first_star(int n)
 {
     int index;
 
-    for (index = 0; index < n * 3; index++) {
+    for (index = 0; index < n * 3 - 1; index++) {
         my_putchar(' ');
     }
     index++;

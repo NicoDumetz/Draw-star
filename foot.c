@@ -9,7 +9,7 @@ int draw_last(int index_bas)
 {
     int i;
 
-    for (i = 0; i < index_bas ; i++) {
+    for (i = 0; i < index_bas - 1 ; i++) {
         my_putchar(' ');
     }
     my_putchar('*');

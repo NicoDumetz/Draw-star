@@ -19,7 +19,7 @@ int draw_body1_n(int index_haut, int index_bas)
 {
     int temp;
 
-    for (temp = 0; temp < index_haut - index_bas - 2; temp++) {
+    for (temp = 0; temp < index_haut - index_bas - 4; temp++) {
         my_putchar(' ');
     }
     my_putchar('*');
@@ -40,7 +40,7 @@ int draw_body2_n(int index_haut, int index_bas)
 {
     int temp;
 
-    for (temp = 0; temp < index_haut - index_bas; temp++) {
+    for (temp = 0; temp < index_haut - index_bas - 2; temp++) {
         my_putchar(' ');
     }
     my_putchar('*');
