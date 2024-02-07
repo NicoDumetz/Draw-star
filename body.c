@@ -1,5 +1,6 @@
 /*
 ** EPITECH PROJECT, 2023
+
 ** BODY STAR
 ** File description:
 ** body of my star
