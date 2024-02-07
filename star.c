@@ -26,15 +26,17 @@ int draw_line_right(int index_haut, int index_bas)
     my_putchar('\n');
 }
 
-int star(unsigned int size)
+void star(unsigned int size)
 {
     int n;
 
     n = size;
     if ( n == 1 ) {
         draw_one();
-        return 0;
+        return;
     }
+    if ( n == 0 )
+        return;
     draw_head(n);
     draw_line_left(2 * n + 1);
     draw_line_right(4 * n + 1, 2 * n + 1);
@@ -42,5 +44,5 @@ int star(unsigned int size)
     draw_line_left(2 * n + 1);
     draw_line_right(4 * n + 1, 2 * n + 1);
     draw_foot(n);
-    return 0;
+    return;
 }
